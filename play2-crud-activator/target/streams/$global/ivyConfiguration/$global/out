@@ -1,0 +1,12 @@
+[debug] Other repositories:
+[debug] 	FileRepository(publish-m2-local,FileConfiguration(true,None),Patterns(ivyPatterns=List(), artifactPatterns=List(C:/Users/paulo/.m2/repository/[organisation]/[module](_[scalaVersion])(_[sbtVersion])/[revision]/[artifact]-[revision](-[classifier]).[ext]), isMavenCompatible=true))
+[debug] Default repositories:
+[debug] 	Raw(ProjectResolver(inter-project, mapped: ))
+[debug] 	FileRepository(local,FileConfiguration(true,None),Patterns(ivyPatterns=List(${ivy.home}/local/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(${ivy.home}/local/[organisation]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false))
+[debug] 	URLRepository(activator-local,Patterns(ivyPatterns=List(file:/C:/IDE/activator-1.1.1/repository/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(file:/C:/IDE/activator-1.1.1/repository/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false))
+[debug] 	public: http://repo1.maven.org/maven2/
+[debug] 	Typesafe Releases: http://repo.typesafe.com/typesafe/releases
+[debug] 	Typesafe Releases Repository: http://repo.typesafe.com/typesafe/releases/
+[debug] 	release repository: http://hakandilek.github.com/maven-repo/releases/
+[debug] 	snapshot repository: http://hakandilek.github.com/maven-repo/snapshots/
+[debug] Using inline dependencies specified in Scala.

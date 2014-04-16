@@ -1,0 +1,18 @@
+2014-04-16 00:04:43,061 - [INFO] - from play in pool-16-thread-3 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-04-16 00:09:36,516 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:db/development
+
+2014-04-16 00:09:40,089 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Long : play.utils.meta.convert.LongConverter@d3cc51
+
+2014-04-16 00:09:40,089 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Double : play.utils.meta.convert.DoubleConverter@10b086d
+
+2014-04-16 00:09:40,090 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Integer : play.utils.meta.convert.IntegerConverter@1562fb7
+
+2014-04-16 00:09:41,046 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+

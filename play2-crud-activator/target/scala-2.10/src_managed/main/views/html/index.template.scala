@@ -1,0 +1,224 @@
+
+package views.html
+
+import play.templates._
+import play.templates.TemplateMagic._
+
+import play.api.templates._
+import play.api.templates.PlayMagic._
+import models._
+import controllers._
+import java.lang._
+import java.util._
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
+import play.api.i18n._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.data._
+import play.api.data.Field
+import play.mvc.Http.Context.Implicit._
+import views.html._
+/**/
+object index extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
+
+    /**/
+    def apply():play.api.templates.HtmlFormat.Appendable = {
+        _display_ {
+
+Seq[Any](_display_(Seq[Any](/*1.2*/main("play2-crud")/*1.20*/ {_display_(Seq[Any](format.raw/*1.22*/("""
+    
+	<div id="container">
+		<div class="row-fluid">
+			<div class="span12">			
+				<div class="row-fluid"> 
+					<div class="grid simple ">
+						<div class="grid-title">
+							<h4><span class="semi-bold">Filtro</span></h4>
+							<div class="tools">
+								<a href="javascript:;" class="collapse"></a>
+								<a href="javascript:;" class="reload"></a>
+							</div>
+						</div>
+						<div class="grid-body ">
+						
+							<div class="main clearfix container-fluid">
+								<div class="span6">
+									
+									<div class="row">
+							            <div class="span12">
+							            	<label class="control-label">Nome do cupom</label>
+								        	<input id="name" type="text" placeholder="Escreva o nome aqui" class="k-textbox span12" value="">	            	
+							            </div>
+							        </div>
+						            		            
+						            <div class="row">
+							            <div class="span6">
+							            	<label class="control-label">Categoria</label>
+				    						<select id="category" class="span12">
+												<option value="">Todos</option>
+							            		<option value="1">Automotivo</option><option value="2">Bebês</option><option value="26">Brinquedos</option><option value="7">Calçados</option><option value="12">Casa e Decoração</option><option value="42">Celulares e Telefones</option><option value="14">Cosméticos e Perfumaria</option><option value="22">Eletrodomésticos</option><option value="23">Eletrônicos</option><option value="24">Entretenimento</option><option value="3">Esporte e Lazer</option><option value="27">Fotografia</option><option value="28">Games</option><option value="29">Informática</option><option value="30">Livros e Revistas</option><option value="39">Moda e Acessórios</option><option value="38">Móveis</option><option value="37">Pet Shop</option><option value="40">Saúde e Beleza</option><option value="41">Viagens e Turismo</option>											</select>
+								        </div>
+							            <div class="span6">
+							            	<label class="control-label">Parceiro</label>
+							            	<select id="partner" class="span12">
+												<option value="">Todos</option>
+							            		<option value="2">Americanas</option><option value="48">Amiga Lingerie</option><option value="49">Amo Muito</option><option value="50">Ana Hickmann</option><option value="51">Azul Linhas Aéreas</option><option value="52">Basico.com</option><option value="27">Brandsclub</option><option value="53">Camiseteria</option><option value="33">Casas Bahia</option><option value="43">Centauro</option><option value="32">CVC</option><option value="18">Dell (Pausado)</option><option value="54">eFácil</option><option value="55">Época Cosméticos Perfumaria</option><option value="17">Extra (Pausado)</option><option value="56">Fashion Buy</option><option value="21">Fast Shop</option><option value="57">Fnac</option><option value="58">Gimba</option><option value="20">Girafa</option><option value="59">Giuliana Home</option><option value="60">Glamour</option><option value="61">Kallan</option><option value="47">Kanui</option><option value="62">Lema 21</option><option value="29">Lenovo Brasil</option><option value="63">Livraria Cultura</option><option value="64">Livraria da Folha</option><option value="65">Livraria da Travessa</option><option value="66">Lojas KD</option><option value="38">Marisa</option><option value="68">Martins Fontes</option><option value="67">Men\'s Market</option><option value="3">Mobly</option><option value="5">Netshoes</option><option value="69">NIKE</option><option value="70">Partiu Viagens</option><option value="45">Pedala (Pausado)</option><option value="39">Polishop</option><option value="16">Ponto Frio (Pausado)</option><option value="4">Ricardo Eletro</option><option value="15">Saraiva</option><option value="71">Sepha</option><option value="44">Shopfato</option><option value="37">Shoptime</option><option value="1">Submarino</option><option value="6">Submarino Viagens</option><option value="72">TAM</option><option value="46">Tricae</option><option value="19">Wallmart</option><option value="7">Zarpo</option>											</select>
+								        </div>
+						            </div>			            
+								</div>
+								<div class="span4 offset1">
+									
+									<div class="row">
+							            <div class="span12">
+							            	<label class="control-label">Situação</label>
+								        	<select id="status">
+								        		<option value="0">Todos</option>
+								        		<option value="1">Pendente</option>
+								        		<option value="2">Autorizado</option>
+								        		<option value="3">Cancelado</option>
+								        	</select>
+								        </div>
+							        </div>
+							        
+							        <div class="row">
+							            <div class="span6">
+							            	<label class="control-label">Inicia em</label>
+							            	<div class="input-append success date dt_initialize" id="dt_initialize">
+							                    <input type="text" class="span8">
+							                    <span class="add-on"><span class="arrow"></span><i class="icon-th"></i></span>
+							                </div>			            	
+							            </div>
+							            <div class="span6">
+							            	<label class="control-label">Finaliza em</label>
+							            	<div class="input-append success date dt_finish" id="dt_finish">
+							                    <input type="text" class="span8">
+							                    <span class="add-on"><span class="arrow"></span><i class="icon-th"></i></span>
+							                </div>
+							            </div>
+						            </div>
+											    			
+								</div>
+							</div>
+						</div>			
+					</div>
+				</div>
+				<div class="row-fluid"> 
+					<div class="grid simple ">
+						<div class="grid-title">
+							<h4><span class="semi-bold" id="result">Resultados (3 registros)</span></h4>
+							<div class="tools">
+								<a href="javascript:;" class="collapse"></a>
+								<a href="javascript:;" class="reload"></a>
+							</div>
+						</div>
+						<div class="grid-body ">						
+							<div class="grid-body no-border">
+								<div class="row-fluid">
+					                
+					                <div class="row-fluid">
+										<table class="table no-more-tables">
+											<thead>
+												<tr>
+													<th width="10%">Parceiro</th>
+													<th width="20%">Cupom</th>
+													<th width="15%">Desconto</th>
+													<th width="15%">Código</th>
+													<th width="15%">Finaliza em</th>
+													<th width="10%">Status</th>
+													<th width="20%"></th>
+												</tr>
+											</thead>
+											<tbody id="results"><tr><td valign="middle"><img src="https://wwws.lomadee.com/programas/BR/5736/logo_185x140.png" style="max-width:100px; max-height:60px;"></td><td valign="middle">5% OFF Todo o site</td><td valign="middle">5.00</td><td valign="middle">lomadee</td><td valign="middle">2014-05-01</td><td valign="middle"><span class="label label-success">Autorizado</span></td><td valign="middle"><a type="button" href="http://bomprobolso.com/admin/coupon/edit/689" class="btn btn-info btn-sm btn-small"><i class="icon-edit"></i>&nbsp;&nbsp;Editar</a></td></tr><tr><td valign="middle"><img src="https://wwws.lomadee.com/programas/BR/5736/logo_185x140.png" style="max-width:100px; max-height:60px;"></td><td valign="middle">Todo o site com 10% de desconto</td><td valign="middle">10.00</td><td valign="middle">#consumosustentavel</td><td valign="middle">2014-03-21</td><td valign="middle"><span class="label label-success">Autorizado</span></td><td valign="middle"><a type="button" href="http://bomprobolso.com/admin/coupon/edit/563" class="btn btn-info btn-sm btn-small"><i class="icon-edit"></i>&nbsp;&nbsp;Editar</a></td></tr><tr><td valign="middle"><img src="https://wwws.lomadee.com/programas/BR/5736/logo_185x140.png" style="max-width:100px; max-height:60px;"></td><td valign="middle">Todo o site com 10% de desconto</td><td valign="middle">10.00</td><td valign="middle">#consumosustentavel</td><td valign="middle">2014-03-21</td><td valign="middle"><span class="label label-warning">Pendente</span></td><td valign="middle"><a type="button" href="http://bomprobolso.com/admin/coupon/edit/596" class="btn btn-info btn-sm btn-small"><i class="icon-edit"></i>&nbsp;&nbsp;Editar</a></td></tr></tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+						
+						
+			</div>
+		</div>
+		
+			
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<br>								
+				<i class="icon-cloud-upload icon-7x"></i> 
+					<h4 id="myModalLabel" class="semi-bold">Selecione um arquivo XML compatível para upload.</h4>
+				<br>
+			</div>
+			<div class="modal-body">
+				<div class="row-fluid">
+					<form id="formulario" method="post" action="" class="no-margin" enctype="multipart/form-data">
+                    	<div class="fallback">
+							<a class="file-input-wrapper btn">Selecione um arquivo<input name="files" id="files" type="file" title="Selecione um arquivo"></a>
+                    	</div>
+                	</form>
+                	
+                	<script>
+                		$(document).ready(function() """),format.raw/*144.48*/("""{"""),format.raw/*144.49*/("""
+                			$('#files').bootstrapFileInput();
+                			
+                			$('#files').live('change', function() """),format.raw/*147.58*/("""{"""),format.raw/*147.59*/("""
+								$('#formulario').ajaxForm("""),format.raw/*148.35*/("""{"""),format.raw/*148.36*/(""" 
+								 	target:'#visualizar'
+								 """),format.raw/*150.10*/("""}"""),format.raw/*150.11*/(""").submit();
+								 $('#myModalLabel').html("");     
+					        	 $('#myModalLabel').append("Importado com sucesso!"); 
+					        """),format.raw/*153.14*/("""}"""),format.raw/*153.15*/(""");
+					        
+                		"""),format.raw/*155.19*/("""}"""),format.raw/*155.20*/(""");
+                	</script>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Fechar</button>
+			</div>
+		</div>
+								
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="admin-bar" id="quick-access" style="bottom: 0px;">
+		<div class="admin-bar-inner">
+			
+			<button class="btn btn-success btn-cons" type="button" id="bt_search"><i class="icon-search"></i>&nbsp;&nbsp;Filtrar</button>		
+			<button class="btn btn-primary btn-cons" type="button" id="bt_new_coupon"><i class="icon-plus-sign-alt"></i>&nbsp;&nbsp;Novo Cupom</button>					
+			<a href="#myModal" role="button" class="btn btn-warning btn-cons" id="bt_import" data-toggle="modal"><i class="icon-cloud-upload"></i>&nbsp;&nbsp;Importar XML</a>
+			
+		</div>
+	</div>
+			
+""")))})))}
+    }
+    
+    def render(): play.api.templates.HtmlFormat.Appendable = apply()
+    
+    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
+    
+    def ref: this.type = this
+
+}
+                /*
+                    -- GENERATED --
+                    DATE: Mon Apr 14 21:34:40 BRT 2014
+                    SOURCE: C:/Desenv/Play/play2-crud-activator/play2-crud-activator/app/views/index.scala.html
+                    HASH: a5e8965ef25d78cc2df11330a37ffdfbefda01c9
+                    MATRIX: 864->1|890->19|929->21|10619->9682|10649->9683|10812->9817|10842->9818|10907->9854|10937->9855|11010->9899|11040->9900|11209->10040|11239->10041|11305->10078|11335->10079
+                    LINES: 29->1|29->1|29->1|172->144|172->144|175->147|175->147|176->148|176->148|178->150|178->150|181->153|181->153|183->155|183->155
+                    -- GENERATED --
+                */
+            
